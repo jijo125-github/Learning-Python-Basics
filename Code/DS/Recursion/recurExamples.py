@@ -21,30 +21,6 @@ def fact(num):
 # print(fact(5))
 
 
-def factiter(num):
-    """ this one is iterative way to find factorial"""
-    factorial = 1
-    while num > 0:
-        factorial = factorial * num
-        num -= 1
-    print(factorial)
-
-# factiter(5)
-
-
-def fiboiter(num):
-    """ calculate fibonacci using iterative way """
-    a,b,i = 0,1,0
-    print(a)
-    print(b)
-    while i < num:
-        a,b = b,a+b
-        print(b)
-        i += 1
-
-# fiboiter(1)
-
-
 def fibo(num):
     """ calculate fibonacii series using recursion """
     if num in [1,0]:
@@ -52,11 +28,33 @@ def fibo(num):
     else:
         return fibo(num-2) + fibo(num-1)
 
-print(fibo(10))
+# print(fibo(10))
 
 
-    
+def productOfArray(arr):
+    """ calculate product of digits in array using recursion """
+    if arr == []:
+        return 1
+    return arr[-1] * productOfArray(arr[:-1])
+
+# print(productOfArray([3,2,4]))
 
 
+def reverse(strng):
+    """ recursive func which accepts a string and returns new string in reverse """
+    if len(strng) == 1:
+        return strng
+    return strng[-1] + reverse(strng[:-1])
+
+# print(reverse('Jijo'))
 
 
+def isPalindrome(strng):
+    """ check string is palindrome using recursion way"""
+    if len(strng) == 1:
+        return True
+    if strng[-1] == strng[0]:
+        return isPalindrome(strng[1:-1])
+    return False
+
+print(isPalindrome('malayalam'))
