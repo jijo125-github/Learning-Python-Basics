@@ -1,0 +1,16 @@
+Efficiency of Linked List Operations:
+
+        Operations                        SinglyLinkedList         DoublyLinkedList
+
+	-->Acess an element                   	  O(n)                     O(n)
+	-->Add/remove at an iterator position 	  O(1)                     O(1)
+	-->Add/remove first element               O(1)                     O(1)
+	-->Add last element                       O(1)                     O(1)
+	-->Remove last element                    O(n)                     O(1)
+
+Array vs Linked list:           Array        LinkedList
+	-->Insertion/Deletion        O(n)           O(1)
+	-->Access element            O(1)           O(n)
+
+				
+

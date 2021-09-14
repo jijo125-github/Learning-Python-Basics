@@ -1,0 +1,7 @@
+Binary Search tree features:- 
+
+--> Each node has, at most, two children: left and right
+--> Each node has a numeric value associated with it.
+--> Children to the left must have lesser values than their parents.
+--> Children to the right must have greater values than their parents.
+--> No duplicate values.
